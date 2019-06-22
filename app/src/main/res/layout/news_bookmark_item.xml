@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:paddingEnd="10dp"
+                                                   android:paddingStart="10dp"
+                                                   android:paddingTop="5dp"
+                                                   android:paddingBottom="5dp"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                       app:cardUseCompatPadding="true"
+                                       android:id="@+id/cvItem"
+                                       app:layout_constraintTop_toTopOf="parent"
+                                       android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ivHeadline"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp"/>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/headlineTime"
+                    android:layout_alignBottom="@id/ivHeadline"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+                <ImageView
+                        android:layout_width="16dp"
+                        android:src="@drawable/ic_time"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_height="16dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:id="@+id/tvPublishedAt"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/tvDescription"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true">
+                <ImageView
+                        android:layout_width="16dp"
+                        android:src="@drawable/ic_web"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_height="16dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/tvSource"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivHeadline"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvTitle"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:id="@+id/tvDescription"
+            />
+        </RelativeLayout>
+        <LinearLayout
+                android:background="@color/headlineTime"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/cvItem"
+                app:layout_constraintRight_toRightOf="@id/cvItem"
+                android:id="@+id/removeBookmark"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:src="@drawable/ic_close"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

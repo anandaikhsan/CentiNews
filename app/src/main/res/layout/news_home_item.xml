@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="250dp"
+                                                   android:layout_height="wrap_content"
+
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                       app:cardUseCompatPadding="true"
+                                       android:layout_height="266dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ivHeadline"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp"/>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/headlineTime"
+                    android:layout_alignBottom="@id/ivHeadline"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+                <ImageView
+                        android:layout_width="16dp"
+                        android:src="@drawable/ic_time"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_height="16dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:id="@+id/tvPublishedAt"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true">
+                <ImageView
+                        android:layout_width="16dp"
+                        android:src="@drawable/ic_web"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_height="16dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/tvSource"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivHeadline"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:id="@+id/tvTitle"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

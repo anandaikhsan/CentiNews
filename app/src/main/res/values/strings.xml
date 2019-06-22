@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CENTINEWS</string>
+    <string name="technologyHeadline">Teknologi</string>
+    <string name="scienceHeadline">Sains</string>
+    <string name="businessHeadline">Bisnis</string>
+    <string name="entertainmentHeadline">Entertainment</string>
+    <string name="generalHeadline">General</string>
+    <string name="healthHeadline">Kesehatan</string>
+    <string name="sportsHeadline">Olahraga</string>
+    <string name="loading">Loading…</string>
+    <string name="loadMore">Muat berita lain</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="bookmarks_list">Bookmarks List</string>
+    <string name="share">Share</string>
+</resources>
